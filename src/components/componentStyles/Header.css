@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background: pink;
+  height: 50px;
+}
+
+.header .header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header .header__left .header__search {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  height: 28px;
+  color: grey;
+  border-radius: 5px;
+  background-color: #eef3f8;
+}
+
+.header .header__left .header__search i {
+  font-size: 1.2rem;
+  position: absolute;
+  left: 5rem;
+}
+
+.header .header__left .header__search input[type="text"] {
+  position: relative;
+  outline: none;
+  background: none;
+  height: 2.8rem;
+  border: none;
+  padding-left: 2rem;
+}
+
+.header .header__left img {
+  object-fit: contain;
+  height: 28px;
+  margin-right: 1rem;
+}
+
+.header__right {
+  display: flex;
+  place-items: space-between;
+}
+/*# sourceMappingURL=Header.css.map */
