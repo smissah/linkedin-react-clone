@@ -1,16 +1,20 @@
 @import "./StyleGuide";
 .header {
+  top: 0;
   display: flex;
   justify-content: space-between;
   position: sticky;
-  background: pink;
+  border-bottom: 0.5px solid rgb(226, 226, 226);
   height: 50px;
+  padding: 0.5rem;
+  z-index: 999;
 
   .header__left {
     display: flex;
     align-items: center;
 
     .header__search {
+      position: relative;
       padding: 10px;
       display: flex;
       align-items: center;
@@ -22,11 +26,10 @@
       i {
         font-size: $fontSmall;
         position: absolute;
-        left: 5rem;
+        left: 1rem;
       }
 
       input[type="text"] {
-        position: relative;
         outline: none;
         background: none;
         height: 2.8rem;

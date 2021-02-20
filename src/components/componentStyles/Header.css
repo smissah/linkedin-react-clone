@@ -1,9 +1,25 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 85vw;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100vw;
+  }
+}
+
 .header {
+  top: 0;
   display: flex;
   justify-content: space-between;
   position: sticky;
-  background: pink;
+  border-bottom: 0.5px solid #e2e2e2;
   height: 50px;
+  padding: 0.5rem;
+  z-index: 999;
 }
 
 .header .header__left {
@@ -12,6 +28,7 @@
 }
 
 .header .header__left .header__search {
+  position: relative;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -24,11 +41,10 @@
 .header .header__left .header__search i {
   font-size: 1.2rem;
   position: absolute;
-  left: 5rem;
+  left: 1rem;
 }
 
 .header .header__left .header__search input[type="text"] {
-  position: relative;
   outline: none;
   background: none;
   height: 2.8rem;
