@@ -13,17 +13,16 @@ import firebase from "firebase";
 const Feed = () => {
   const [input, setInput] = useState("");
   const [posts, setPosts] = useState([]);
+  console.log(posts);
 
   useEffect(() => {
     // realtime listener for database
     db.collection("posts").onSnapshot((snapshot) =>
       setPosts(
-        snapshot.docs.map((doc) => {
-          return {
-            id: doc.id,
-            data: doc.data(),
-          };
-        })
+        snapshot.docs.map((doc) => ({
+          id: doc.id,
+          data: doc.data(),
+        }))
       )
     );
   }, []);
@@ -49,7 +48,7 @@ const Feed = () => {
       <div className="feed__inputContainer">
         <div className="feed__input">
           <CreateIcon />
-          <form onSubmit={() => handlePostSubmit}>
+          <form onSubmit={handlePostSubmit}>
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
@@ -73,15 +72,15 @@ const Feed = () => {
       </div>
 
       <div className="feed__posts">
-        {posts.map(({ id, data: { name, description, message, photoUrl } }) => {
+        {posts.map(({ id, data: { name, description, message, photoUrl } }) => (
           <Post
             key={id}
             name={name}
             description={description}
             message={message}
             photoUrl={photoUrl}
-          />;
-        })}
+          />
+        ))}
       </div>
     </div>
   );
