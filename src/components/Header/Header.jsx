@@ -1,5 +1,5 @@
 import React from "react";
-import "../componentStyles/Header.css";
+import "../componentStyles/headerStyles/Header.css";
 // import SearchIcon from "@material-ui/icons/Search";
 import HomeIcon from "@material-ui/icons/Home";
 
@@ -29,8 +29,12 @@ const Header = () => {
     <div className="header">
       <div className="container">
         <div className="header__left">
-          <img
+          {/* <img
             src="https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token=exp=1613845370~hmac=8c2c7fc5c552316b377039a90399a263"
+            alt=""
+          /> */}
+          <img
+            src="https://image.flaticon.com/icons/png/512/174/174857.png"
             alt=""
           />
 

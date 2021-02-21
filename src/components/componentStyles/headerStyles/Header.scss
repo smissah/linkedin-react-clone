@@ -1,13 +1,14 @@
-@import "./StyleGuide";
+@import "../../../StyleGuide";
 .header {
   top: 0;
   display: flex;
   justify-content: space-between;
   position: sticky;
-  border-bottom: 0.5px solid rgb(226, 226, 226);
+  border-bottom: 0.5px solid $clr-border;
   height: 50px;
   padding: 0.5rem;
   z-index: 999;
+  background: $clr-offWhite;
 
   .header__left {
     display: flex;
@@ -48,5 +49,7 @@
 
 .header__right {
   display: flex;
+  position: relative;
+  align-items: center;
   place-items: space-between;
 }

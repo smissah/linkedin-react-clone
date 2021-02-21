@@ -1,3 +1,7 @@
+html {
+  font-size: 62.5%;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -15,14 +19,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
   margin-right: 2rem;
   height: 100%;
   color: grey;
   margin-bottom: -1rem;
   cursor: pointer;
   height: 40px;
+  transition: color 0.25s ease-in-out;
 }
 
 .headerOption:hover {
@@ -33,15 +36,12 @@
   font-size: 1rem;
   margin-bottom: -0.25rem;
   object-fit: contain;
-}
-
-.headerOption .headerOption__avatar {
   width: 18px;
   height: 18px;
 }
 
 .headerOption .headerOption__title {
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=HeaderOptions.css.map */

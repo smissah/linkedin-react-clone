@@ -1,3 +1,7 @@
+html {
+  font-size: 62.5%;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -16,10 +20,11 @@
   display: flex;
   justify-content: space-between;
   position: sticky;
-  border-bottom: 0.5px solid #e2e2e2;
+  border-bottom: 0.5px solid lightgrey;
   height: 50px;
   padding: 0.5rem;
   z-index: 999;
+  background: #fafafa;
 }
 
 .header .header__left {
@@ -60,6 +65,8 @@
 
 .header__right {
   display: flex;
+  position: relative;
+  align-items: center;
   place-items: space-between;
 }
 /*# sourceMappingURL=Header.css.map */

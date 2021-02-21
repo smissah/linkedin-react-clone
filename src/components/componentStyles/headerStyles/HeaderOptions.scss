@@ -1,17 +1,17 @@
-@import "_StyleGuide";
+@import "../../../StyleGuide";
 
 .headerOption {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+
   margin-right: 2rem;
   height: 100%;
   color: $clr-grey;
   margin-bottom: -1rem;
   cursor: pointer;
   height: 40px;
+  transition: color $aniSpeed;
 
   &:hover {
     color: black;
@@ -21,15 +21,17 @@
     font-size: 1rem;
     margin-bottom: -0.25rem;
     object-fit: contain;
-  }
-  .headerOption__avatar {
     width: 18px;
     height: 18px;
   }
+  // .headerOption__avatar {
+  //   // width: 18px;
+  //   // height: 18px;
+  // }
 
   .headerOption__title {
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     // font-size: $fontSmall;
   }
 }

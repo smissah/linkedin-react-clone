@@ -1,15 +1,25 @@
+html {
+  font-size: 62.5%;
+}
+//------------------------
 $fontNormal: 1.6rem;
 $fontSmall: 1.2rem;
 
 //colors
 
 $clr-grey: grey;
+$clr-lightgrey: rgb(238, 238, 238);
 $clr-lightBlue: #eef3f8;
+$clr-offWhite: rgb(250, 250, 250);
+$clr-border: lightgrey;
+$clr-blueMain: #0a66c2;
 
 //radius
 
 $smallRad: 5px;
+$mediumRad: 10px;
 
+//main app container
 .container {
   display: flex;
   justify-content: space-between;
@@ -18,10 +28,13 @@ $smallRad: 5px;
   //   background: red;
 }
 
+//animation
+
+$aniSpeed: 0.25s ease-in-out;
+
+//media queries
 @media screen and (max-width: 800px) {
   .container {
     width: 100vw;
-
-    // background: red;
   }
 }

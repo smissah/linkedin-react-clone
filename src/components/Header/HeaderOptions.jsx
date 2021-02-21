@@ -1,6 +1,6 @@
 import React from "react";
 import { Avatar } from "@material-ui/core";
-import "../componentStyles/HeaderOptions.css";
+import "../componentStyles/headerStyles/HeaderOptions.css";
 const HeaderOptions = ({ avatar, Icon, title }) => {
   console.log(avatar);
   return (
