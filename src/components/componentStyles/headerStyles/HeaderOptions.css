@@ -15,13 +15,33 @@ html {
   }
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fafafa;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0a66c2;
+}
+
 .headerOption {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 2rem;
   height: 100%;
-  color: grey;
+  color: #8b8888;
   margin-bottom: -1rem;
   cursor: pointer;
   height: 40px;

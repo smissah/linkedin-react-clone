@@ -7,7 +7,7 @@ $fontSmall: 1.2rem;
 
 //colors
 
-$clr-grey: grey;
+$clr-grey: rgb(139, 136, 136);
 $clr-lightgrey: rgb(238, 238, 238);
 $clr-lightBlue: #eef3f8;
 $clr-offWhite: rgb(250, 250, 250);
@@ -18,6 +18,16 @@ $clr-blueMain: #0a66c2;
 
 $smallRad: 5px;
 $mediumRad: 10px;
+
+//spacing__padding
+$paddingMedium: 0.5rem;
+$paddingNormal: 1rem;
+
+//spacing__margins
+$marginSmall: 0.25rem;
+$marginMedium: 0.5rem;
+$marginNormal: 1rem;
+$marginLarge: 2rem;
 
 //main app container
 .container {
@@ -37,4 +47,26 @@ $aniSpeed: 0.25s ease-in-out;
   .container {
     width: 100vw;
   }
+}
+
+//scroll bar
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $clr-offWhite;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $clr-blueMain;
 }

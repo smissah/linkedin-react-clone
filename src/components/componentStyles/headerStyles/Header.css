@@ -15,6 +15,26 @@ html {
   }
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fafafa;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0a66c2;
+}
+
 .header {
   top: 0;
   display: flex;
@@ -38,7 +58,7 @@ html {
   display: flex;
   align-items: center;
   height: 28px;
-  color: grey;
+  color: #8b8888;
   border-radius: 5px;
   background-color: #eef3f8;
 }

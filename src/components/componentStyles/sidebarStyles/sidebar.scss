@@ -5,7 +5,7 @@
   top: 80px;
   position: sticky;
   flex: 0.2;
-  border-radius: 10px;
+  border-radius: $mediumRad;
   height: fit-content;
   text-align: center;
 
@@ -18,9 +18,9 @@
     border-top-right-radius: $mediumRad;
     display: flex;
     flex-direction: column;
-    padding-bottom: 10px;
+    padding-bottom: $paddingNormal;
     h2 {
-      font-size: 1.7rem;
+      font-size: 1.8rem;
     }
     h4 {
       font-size: 1.2rem;
@@ -28,26 +28,26 @@
     }
 
     .sidebar__banner {
-      margin-bottom: -20px;
+      margin-bottom: -$marginLarge;
       width: 100%;
       height: 60px;
       object-fit: cover;
       border-top-left-radius: $mediumRad;
       border-top-right-radius: $mediumRad;
     }
-  }
-  .sidebar__avatar {
-    margin-bottom: 0.5rem;
+    .sidebar__avatar {
+      margin-bottom: $marginMedium;
+    }
   }
 
   .sidebar__stats {
-    background: white;
+    background: $clr-offWhite;
     border: 1px solid $clr-border;
-    padding: 1rem;
+    padding: $paddingNormal;
     border-bottom-left-radius: $mediumRad;
     border-bottom-right-radius: $mediumRad;
     .sidebar__stat {
-      margin-top: 1rem;
+      margin-top: $marginNormal;
       display: flex;
       justify-content: space-between;
       p {
@@ -59,6 +59,39 @@
       .sidebar__statNumber {
         font-weight: bold;
         color: $clr-blueMain;
+      }
+    }
+  }
+
+  .sidebar__bottom {
+    color: black;
+    font-weight: bold;
+    background: $clr-offWhite;
+    padding: $paddingNormal;
+    border: 1px solid $clr-border;
+    border-radius: $mediumRad;
+    text-align: left;
+    font-size: $fontSmall;
+    p {
+      margin-bottom: $marginSmall;
+    }
+
+    .sidebar__recent {
+      color: $clr-grey;
+      cursor: pointer;
+      display: flex;
+      font-size: $fontSmall;
+      margin: $marginSmall 0;
+      transition: color $aniSpeed;
+
+      &:hover {
+        background: $clr-lightgrey;
+        color: black;
+        border-radius: $mediumRad;
+      }
+
+      .sidebar__hash {
+        margin: 0 $marginMedium;
       }
     }
   }
