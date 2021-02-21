@@ -7,6 +7,7 @@ html {
   justify-content: space-between;
   width: 85vw;
   margin: 0 auto;
+  padding: 2rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -62,6 +63,6 @@ html {
 
 .headerOption .headerOption__title {
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 /*# sourceMappingURL=HeaderOptions.css.map */

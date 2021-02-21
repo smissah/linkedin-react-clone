@@ -2,6 +2,7 @@
 
 .sidebar {
   @include sectionSpaceStyle;
+  margin-left: 0;
   top: 80px;
   position: sticky;
   flex: 0.2;

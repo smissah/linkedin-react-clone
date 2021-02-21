@@ -7,6 +7,7 @@ html {
   justify-content: space-between;
   width: 85vw;
   margin: 0 auto;
+  padding: 2rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -38,6 +39,7 @@ html {
 .sidebar {
   margin: 2rem 1rem;
   border-radius: 10px;
+  margin-left: 0;
   top: 80px;
   position: sticky;
   flex: 0.2;

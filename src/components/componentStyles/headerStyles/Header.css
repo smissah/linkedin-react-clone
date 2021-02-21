@@ -7,6 +7,7 @@ html {
   justify-content: space-between;
   width: 85vw;
   margin: 0 auto;
+  padding: 2rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -42,7 +43,7 @@ html {
   position: sticky;
   border-bottom: 0.5px solid lightgrey;
   height: 50px;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   z-index: 999;
   background: #fafafa;
 }
