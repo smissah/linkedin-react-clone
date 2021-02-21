@@ -13,24 +13,25 @@ import firebase from "firebase";
 const Feed = () => {
   const [input, setInput] = useState("");
   const [posts, setPosts] = useState([]);
-  console.log(posts);
 
   useEffect(() => {
     // realtime listener for database
-    db.collection("posts").onSnapshot((snapshot) =>
-      setPosts(
-        snapshot.docs.map((doc) => ({
-          id: doc.id,
-          data: doc.data(),
-        }))
-      )
-    );
+    db.collection("posts")
+      .orderBy("timestamp", "desc")
+      .onSnapshot((snapshot) =>
+        setPosts(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            data: doc.data(),
+          }))
+        )
+      );
   }, []);
   //functions
 
   const handlePostSubmit = (e) => {
     e.preventDefault();
-    console.log("sumit");
+    console.log("submit");
     //push to database
     db.collection("posts").add({
       name: "Stephen Missah",
@@ -40,6 +41,7 @@ const Feed = () => {
       //using server timestamp keeps time the same regardless of lcation
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
+    setInput("");
   };
 
   //----------------

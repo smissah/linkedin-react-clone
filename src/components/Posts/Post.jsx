@@ -24,6 +24,7 @@ const Post = ({
       </div>
       <div className="post__body">
         <p className="post__message">{message}</p>
+
         <div className="post__buttons">
           <InputOption Icon={ThumbUpAltIcon} title="Like" color="grey" />
           <InputOption Icon={ChatIcon} title="Comment" color="grey" />
