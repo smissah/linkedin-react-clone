@@ -54,7 +54,7 @@
       display: flex;
       justify-content: space-between;
       p {
-        font-size: 1.3rem;
+        font-size: $fontSmall;
         color: $clr-grey;
         font-weight: 600;
       }
@@ -83,7 +83,6 @@
       color: $clr-grey;
       cursor: pointer;
       display: flex;
-      font-size: $fontSmall;
       margin: $marginSmall 0;
       transition: color $aniSpeed;
 

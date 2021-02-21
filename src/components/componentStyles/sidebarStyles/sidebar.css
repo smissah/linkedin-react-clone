@@ -98,7 +98,7 @@ html {
 }
 
 .sidebar .sidebar__stats .sidebar__stat p {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #8b8888;
   font-weight: 600;
 }
@@ -116,7 +116,7 @@ html {
   border: 1px solid lightgrey;
   border-radius: 10px;
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .sidebar .sidebar__bottom p {
@@ -127,7 +127,6 @@ html {
   color: #8b8888;
   cursor: pointer;
   display: flex;
-  font-size: 1.2rem;
   margin: 0.25rem 0;
   transition: color 0.25s ease-in-out;
 }

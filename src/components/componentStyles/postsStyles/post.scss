@@ -24,12 +24,15 @@
   }
 
   .post__body {
-    // .post__message {
-    //   // overflow-wrap: anywhere;
-    // }
+    .post__message {
+      overflow-wrap: break-word;
+      font-size: $fontNormal;
+      padding-left: $paddingNormal;
+    }
 
     .post__buttons {
       display: flex;
+      justify-content: space-evenly;
     }
   }
 }

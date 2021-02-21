@@ -10,12 +10,17 @@ import Post from "../Posts/Post";
 
 const Feed = () => {
   const [posts, setPosts] = useState([]);
+
+  const handlePostSubmit = (e) => {
+    e.preventDefault();
+    console.log(e);
+  };
   return (
     <div className="feed">
       <div className="feed__inputContainer">
         <div className="feed__input">
           <CreateIcon />
-          <form>
+          <form onSubmit={handlePostSubmit}>
             <input type="text" placeholder="Create an awesome post" />
             <button type="submit"></button>
           </form>
@@ -35,8 +40,9 @@ const Feed = () => {
 
       <div className="feed__posts">
         {posts.map((post, index) => {
-          <Post key={index} name="stephen missah" />;
+          <Post key={index} name="" description="" message="" imageUrl="" />;
         })}
+        <Post name="stephen missah" message="My first post on Linkedin" />;
       </div>
     </div>
   );

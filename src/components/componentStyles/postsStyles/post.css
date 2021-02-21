@@ -58,10 +58,17 @@ html {
 
 .post .post__header .post__info p {
   color: #8b8888;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.post .post__body .post__message {
+  overflow-wrap: break-word;
+  font-size: 1.6rem;
+  padding-left: 1rem;
 }
 
 .post .post__body .post__buttons {
   display: flex;
+  justify-content: space-evenly;
 }
 /*# sourceMappingURL=post.css.map */
