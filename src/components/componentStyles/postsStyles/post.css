@@ -60,10 +60,6 @@ html {
   font-size: 1.2rem;
 }
 
-.post .post__body .post__message {
-  overflow-wrap: anywhere;
-}
-
 .post .post__body .post__buttons {
   display: flex;
 }
