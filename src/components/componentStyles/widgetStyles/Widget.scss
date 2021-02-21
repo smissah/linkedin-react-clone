@@ -2,8 +2,6 @@
 
 .widget {
   @include sectionSpaceStyle;
-
   background: rgb(70, 70, 70);
   flex: 0.2;
-  margin: $marginNormal $marginMedium;
 }

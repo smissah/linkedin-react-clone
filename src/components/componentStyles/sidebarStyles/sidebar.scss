@@ -18,12 +18,14 @@
     display: flex;
     flex-direction: column;
     padding-bottom: $paddingNormal;
+
     h2 {
       font-size: 1.8rem;
     }
     h4 {
       font-size: 1.2rem;
       color: $clr-grey;
+      padding: 0 $paddingNormal;
     }
 
     .sidebar__banner {
@@ -40,6 +42,7 @@
   }
 
   .sidebar__stats {
+    margin-bottom: $marginSmall;
     background: $clr-offWhite;
     border: 1px solid $clr-border;
     padding: $paddingNormal;

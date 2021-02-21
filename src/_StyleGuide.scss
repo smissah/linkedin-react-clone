@@ -7,6 +7,7 @@ $fontSmall: 1.2rem;
 
 //colors
 
+$clr-drkgrey: rgb(68, 68, 68);
 $clr-grey: rgb(139, 136, 136);
 $clr-lightgrey: rgb(238, 238, 238);
 $clr-lightBlue: #eef3f8;
@@ -22,6 +23,7 @@ $mediumRad: 10px;
 //spacing__padding
 $paddingMedium: 0.5rem;
 $paddingNormal: 1rem;
+$paddingLarge: 2rem;
 
 //spacing__margins
 $marginSmall: 0.25rem;
@@ -74,6 +76,6 @@ $aniSpeed: 0.25s ease-in-out;
 //!mixins
 
 @mixin sectionSpaceStyle {
-  margin: $marginNormal $marginNormal;
+  margin: $marginLarge $marginNormal;
   border-radius: $mediumRad;
 }

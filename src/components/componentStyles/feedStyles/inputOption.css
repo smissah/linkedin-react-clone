@@ -35,10 +35,27 @@ html {
   background: #0a66c2;
 }
 
-.widget {
-  margin: 2rem 1rem;
-  border-radius: 10px;
-  background: #464646;
-  flex: 0.2;
+.inputOption {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.25s ease-in-out;
 }
-/*# sourceMappingURL=Widget.css.map */
+
+.inputOption:hover {
+  background: #eeeeee;
+  border-radius: 10px;
+}
+
+.inputOption:hover h4 {
+  color: black;
+}
+
+.inputOption h4 {
+  color: #8b8888;
+  margin-left: 0.5rem;
+}
+/*# sourceMappingURL=inputOption.css.map */

@@ -2,9 +2,58 @@
 
 .feed {
   @include sectionSpaceStyle;
+  padding: $paddingNormal;
 
   background: $clr-offWhite;
   display: flex;
+  flex-direction: column;
   flex: 0.6;
-  margin: $marginNormal $marginMedium;
+  //   justify-content: space-around;
+
+  .feed__inputContainer {
+    background: $clr-offWhite;
+    // background: rgb(126, 126, 126);
+    height: 150px;
+    width: 100%;
+    padding: $paddingNormal;
+    // padding-bottom: $paddingLarge;
+    border-radius: $mediumRad;
+    margin-bottom: $marginLarge;
+
+    .feed__input {
+      border: solid 1px $clr-border;
+      border-radius: 30px;
+      display: flex;
+      padding: $paddingNormal;
+      color: $clr-grey;
+      &:hover {
+        background-color: $clr-lightgrey;
+      }
+
+      form {
+        display: flex;
+        width: 100%;
+
+        input {
+          color: $clr-drkgrey;
+
+          border: none;
+          flex: 1;
+          outline: none;
+          font-weight: 600;
+          margin: 0 $marginMedium;
+          background: none;
+        }
+
+        button {
+          display: none;
+        }
+      }
+    }
+
+    .feed_inputOptions {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
 }

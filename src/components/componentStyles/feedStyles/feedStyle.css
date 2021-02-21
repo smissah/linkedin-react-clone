@@ -36,11 +36,57 @@ html {
 }
 
 .feed {
-  margin: 1rem 1rem;
+  margin: 2rem 1rem;
   border-radius: 10px;
+  padding: 1rem;
   background: #fafafa;
   display: flex;
+  flex-direction: column;
   flex: 0.6;
-  margin: 1rem 0.5rem;
+}
+
+.feed .feed__inputContainer {
+  background: #fafafa;
+  height: 150px;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.feed .feed__inputContainer .feed__input {
+  border: solid 1px lightgrey;
+  border-radius: 30px;
+  display: flex;
+  padding: 1rem;
+  color: #8b8888;
+}
+
+.feed .feed__inputContainer .feed__input:hover {
+  background-color: #eeeeee;
+}
+
+.feed .feed__inputContainer .feed__input form {
+  display: flex;
+  width: 100%;
+}
+
+.feed .feed__inputContainer .feed__input form input {
+  color: #444444;
+  border: none;
+  flex: 1;
+  outline: none;
+  font-weight: 600;
+  margin: 0 0.5rem;
+  background: none;
+}
+
+.feed .feed__inputContainer .feed__input form button {
+  display: none;
+}
+
+.feed .feed__inputContainer .feed_inputOptions {
+  display: flex;
+  justify-content: space-evenly;
 }
 /*# sourceMappingURL=feedStyle.css.map */
