@@ -1,5 +1,5 @@
 import React from "react";
-import "../componentStyles/feedStyles/inputOption.css";
+import "./inputOption.css";
 const InputOption = ({ Icon, color, title }) => {
   return (
     <div className="inputOption">

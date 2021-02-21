@@ -4,7 +4,7 @@
   @include sectionSpaceStyle;
   padding: $paddingNormal;
 
-  background: $clr-offWhite;
+  //   background: $clr-offWhite;
   display: flex;
   flex-direction: column;
   flex: 0.6;
@@ -13,7 +13,7 @@
   .feed__inputContainer {
     background: $clr-offWhite;
     // background: rgb(126, 126, 126);
-    height: 150px;
+    height: 100px;
     width: 100%;
     padding: $paddingNormal;
     // padding-bottom: $paddingLarge;

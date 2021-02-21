@@ -1,0 +1,70 @@
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 85vw;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100vw;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fafafa;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0a66c2;
+}
+
+.post {
+  background: #fafafa;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.post .post__header {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.post .post__header .post__info {
+  margin-left: 1rem;
+}
+
+.post .post__header .post__info h2 {
+  font-size: 1.6rem;
+}
+
+.post .post__header .post__info p {
+  color: #8b8888;
+  font-size: 1.2rem;
+}
+
+.post .post__body .post__message {
+  overflow-wrap: anywhere;
+}
+
+.post .post__body .post__buttons {
+  display: flex;
+}
+/*# sourceMappingURL=post.css.map */

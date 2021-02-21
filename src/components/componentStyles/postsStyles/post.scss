@@ -1,0 +1,35 @@
+@import "../../../StyleGuide";
+
+.post {
+  background: $clr-offWhite;
+  border-radius: $mediumRad;
+  margin-bottom: $marginNormal;
+  padding: $paddingNormal;
+
+  .post__header {
+    display: flex;
+    margin-bottom: $marginNormal;
+
+    .post__info {
+      margin-left: $marginNormal;
+
+      h2 {
+        font-size: $fontNormal;
+      }
+      p {
+        color: $clr-grey;
+        font-size: $fontSmall;
+      }
+    }
+  }
+
+  .post__body {
+    .post__message {
+      overflow-wrap: anywhere;
+    }
+
+    .post__buttons {
+      display: flex;
+    }
+  }
+}
