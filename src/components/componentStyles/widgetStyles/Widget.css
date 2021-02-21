@@ -35,9 +35,11 @@ html {
   background: #0a66c2;
 }
 
-.app {
-  display: flex;
-  flex-direction: column;
-  background-color: #eeeeee;
+.widget {
+  margin: 1rem 1rem;
+  border-radius: 10px;
+  background: #464646;
+  flex: 0.2;
+  margin: 1rem 0.5rem;
 }
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=Widget.css.map */

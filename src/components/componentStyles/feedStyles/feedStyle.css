@@ -35,9 +35,12 @@ html {
   background: #0a66c2;
 }
 
-.app {
+.feed {
+  margin: 1rem 1rem;
+  border-radius: 10px;
+  background: #fafafa;
   display: flex;
-  flex-direction: column;
-  background-color: #eeeeee;
+  flex: 0.6;
+  margin: 1rem 0.5rem;
 }
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=feedStyle.css.map */

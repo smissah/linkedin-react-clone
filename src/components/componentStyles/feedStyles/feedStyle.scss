@@ -1,0 +1,10 @@
+@import "../../../StyleGuide";
+
+.feed {
+  @include sectionSpaceStyle;
+
+  background: $clr-offWhite;
+  display: flex;
+  flex: 0.6;
+  margin: $marginNormal $marginMedium;
+}

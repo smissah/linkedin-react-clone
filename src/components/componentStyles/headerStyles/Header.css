@@ -38,7 +38,7 @@ html {
 .header {
   top: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between !important;
   position: sticky;
   border-bottom: 0.5px solid lightgrey;
   height: 50px;

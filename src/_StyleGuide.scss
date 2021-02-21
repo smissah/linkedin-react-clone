@@ -70,3 +70,10 @@ $aniSpeed: 0.25s ease-in-out;
 ::-webkit-scrollbar-thumb:hover {
   background: $clr-blueMain;
 }
+
+//!mixins
+
+@mixin sectionSpaceStyle {
+  margin: $marginNormal $marginNormal;
+  border-radius: $mediumRad;
+}
