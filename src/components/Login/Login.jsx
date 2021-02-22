@@ -9,14 +9,14 @@ const Login = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [isDisabled, setIsDisabled] = useState("handleisDisabled");
+  const [isDisabled, setIsDisabled] = useState(true);
 
   //functions
   const handleisDisabled = () => {
     if (!name) {
-      return "true";
+      return true;
     }
-    return "false";
+    return false;
   };
 
   const handleLogin = (e) => {
@@ -74,7 +74,7 @@ const Login = () => {
           type="submit"
           className="login__formSubmit"
           onClick={handleLogin}
-          disabled={handleisDisabled}
+          disabled={isDisabled}
         >
           Sign in
         </button>
