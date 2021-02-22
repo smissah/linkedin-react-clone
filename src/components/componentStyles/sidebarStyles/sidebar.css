@@ -76,12 +76,12 @@ body {
 }
 
 .sidebar {
-  margin: 2rem 1rem;
+  margin: 2rem 0.25rem;
   border-radius: 10px;
   margin-left: 0;
   top: 80px;
   position: sticky;
-  flex: 0.2;
+  flex: 0.25;
   height: fit-content;
   text-align: center;
 }
@@ -171,7 +171,7 @@ body {
 }
 
 .sidebar .sidebar__bottom .sidebar__recent:hover {
-  background: #9b9b9b;
+  background: #ebebeb;
   color: black;
   border-radius: 10px;
 }

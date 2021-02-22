@@ -76,12 +76,12 @@ body {
 }
 
 .feed {
-  margin: 2rem 1rem;
+  margin: 2rem 0.25rem;
   border-radius: 10px;
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
-  flex: 0.6;
+  flex: 0.55;
 }
 
 .feed .feed__inputContainer {
@@ -101,7 +101,7 @@ body {
 }
 
 .feed .feed__inputContainer .feed__input:hover {
-  background-color: #9b9b9b;
+  background-color: #ebebeb;
 }
 
 .feed .feed__inputContainer .feed__input form {

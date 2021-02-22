@@ -8,7 +8,7 @@ body {
 //!mixins
 
 @mixin sectionSpaceStyle {
-  margin: $marginLarge $marginNormal;
+  margin: $marginLarge $marginSmall;
   border-radius: $mediumRad;
 }
 
@@ -21,7 +21,7 @@ $fontSmall: 1.4rem;
 $clr-appbg: rgba(238, 238, 238, 0.891);
 $clr-drkgrey: rgb(68, 68, 68);
 $clr-grey: rgb(92, 92, 92);
-$clr-lightgrey: rgb(155, 155, 155);
+$clr-lightgrey: rgb(235, 235, 235);
 $clr-lightBlue: #eef3f8;
 $clr-offWhite: rgb(250, 250, 250);
 $clr-border: lightgrey;
@@ -38,6 +38,7 @@ $paddingNormal: 1rem;
 $paddingLarge: 2rem;
 
 //spacing__margins
+$marginSmall: 0.1rem;
 $marginSmall: 0.25rem;
 $marginMedium: 0.5rem;
 $marginNormal: 1rem;

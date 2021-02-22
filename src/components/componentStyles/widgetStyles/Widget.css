@@ -76,7 +76,7 @@ body {
 }
 
 .widget {
-  margin: 2rem 1rem;
+  margin: 2rem 0.25rem;
   border-radius: 10px;
   margin-right: 0;
   top: 80px;
