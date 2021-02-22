@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import VisibilityIcon from "@material-ui/icons/Visibility";
 import VisibilityOffIcon from "@material-ui/icons/VisibilityOff";
 import "../componentStyles/loginStyles/loginStyles.css";
+import { auth } from "../../firebase";
 
 const Login = () => {
   const [visibility, setVisibility] = useState(false);
   //functions
 
-  const handleLogin = () => {
+  const handleLogin = (e) => {
     console.log("Loginning in");
+    e.preventDefault();
+
+    // auth
   };
   const toggleVisibility = () => {
     setVisibility(!visibility);
@@ -54,7 +58,7 @@ const Login = () => {
       </form>
 
       <p>
-        Not a member?
+        Not a member? {"  "}
         <span className="login__register" onClick={register}>
           Register now
         </span>
