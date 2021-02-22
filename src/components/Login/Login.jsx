@@ -6,7 +6,18 @@ import { auth } from "../../firebase";
 
 const Login = () => {
   const [visibility, setVisibility] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [isDisabled, setIsDisabled] = useState("handleisDisabled");
+
   //functions
+  const handleisDisabled = () => {
+    if (!name) {
+      return "true";
+    }
+    return "false";
+  };
 
   const handleLogin = (e) => {
     console.log("Loginning in");
@@ -31,9 +42,19 @@ const Login = () => {
       />
 
       <form action="" className="login__form">
-        <input type="text" text="" placeholder="Full Name" />
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value.trim())}
+          placeholder="Full Name"
+        />
         <input type="text" text="" placeholder="Profile URL (optional)" />
-        <input type="email" placeholder="Email" />
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value.trim())}
+        />
         <div className="pass">
           <div className="visibility" onClick={toggleVisibility}>
             {visibility ? (
@@ -45,13 +66,15 @@ const Login = () => {
           <input
             className="password"
             type={visibility ? "text" : "password"}
-            placeholder
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
           />
         </div>
         <button
           type="submit"
           className="login__formSubmit"
           onClick={handleLogin}
+          disabled={handleisDisabled}
         >
           Sign in
         </button>
