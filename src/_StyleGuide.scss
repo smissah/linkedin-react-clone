@@ -1,9 +1,10 @@
 html,
 body {
   font-size: 62.5%;
-  // width: 100vw !important;
-  min-width: 400px;
+  width: 100vw !important;
+  min-width: 400px !important;
 }
+//!mixins
 
 @mixin sectionSpaceStyle {
   margin: $marginLarge $marginNormal;
@@ -16,6 +17,7 @@ $fontSmall: 1.4rem;
 
 //colors
 
+$clr-appbg: rgba(238, 238, 238, 0.891);
 $clr-drkgrey: rgb(68, 68, 68);
 $clr-grey: rgb(139, 136, 136);
 $clr-lightgrey: rgb(238, 238, 238);
@@ -56,17 +58,18 @@ $aniSpeed: 0.25s ease-in-out;
 
 //media queries
 @media screen and (max-width: 800px) {
-  html {
-    width: 100% !important;
-  }
   //!container- main body
   .container {
     width: 100%;
   }
 
+  // .app {
+  //   background: rgba(255, 255, 255, 0.124);
+  // }
   .app__body {
     display: flex;
     flex-direction: column;
+    // background: red;
   }
 
   //!header
@@ -77,6 +80,7 @@ $aniSpeed: 0.25s ease-in-out;
   }
   //!sidebar
   .sidebar {
+    width: 100%;
     top: 0px;
     position: relative;
   }
@@ -85,23 +89,21 @@ $aniSpeed: 0.25s ease-in-out;
 
   .feed {
     width: 100%;
+    padding: 0 !important;
+
+    .feed__inputContainer {
+      padding: auto 0 !important;
+    }
 
     .inputOption {
       font-size: lrem;
-      margin: 0.5rem !important;
-      padding: 2px 5px;
-    }
-
-    .feed__inputOptions {
-      width: 50%;
-      transform: translateX(50%);
-      flex-direction: row;
+      margin: 1.5rem 0.5rem 0.25rem 0.5rem !important;
+      padding: 5px 5px;
     }
   }
 
-  .post__buttons {
-    width: 100%;
-    // flex-direction: column;
+  .post {
+    margin: 1rem;
   }
 
   //!widget
@@ -112,6 +114,7 @@ $aniSpeed: 0.25s ease-in-out;
     margin: 0 !important;
   }
 }
+
 //scroll bar
 
 /* width */
@@ -133,5 +136,3 @@ $aniSpeed: 0.25s ease-in-out;
 ::-webkit-scrollbar-thumb:hover {
   background: $clr-blueMain;
 }
-
-//!mixins

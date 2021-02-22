@@ -2,17 +2,16 @@
 
 .app {
   display: flex;
+
   flex-direction: column;
   // align-items: center; //he did center
   // align-items: space-between;
   background-color: $clr-lightgrey;
+  background-color: $clr-appbg;
 
   .app__body {
     height: fit-content;
     height: 100hv;
     // background: red;
   }
-}
-
-@media screen and (max-width: 800px) {
 }

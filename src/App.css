@@ -1,7 +1,8 @@
 html,
 body {
   font-size: 62.5%;
-  min-width: 400px;
+  width: 100vw !important;
+  min-width: 400px !important;
 }
 
 .container {
@@ -13,9 +14,6 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  html {
-    width: 100% !important;
-  }
   .container {
     width: 100%;
   }
@@ -29,24 +27,24 @@ body {
     align-items: center;
   }
   .sidebar {
+    width: 100%;
     top: 0px;
     position: relative;
   }
   .feed {
     width: 100%;
+    padding: 0 !important;
+  }
+  .feed .feed__inputContainer {
+    padding: auto 0 !important;
   }
   .feed .inputOption {
     font-size: lrem;
-    margin: 0.5rem !important;
-    padding: 2px 5px;
+    margin: 1.5rem 0.5rem 0.25rem 0.5rem !important;
+    padding: 5px 5px;
   }
-  .feed .feed__inputOptions {
-    width: 50%;
-    transform: translateX(50%);
-    flex-direction: row;
-  }
-  .post__buttons {
-    width: 100%;
+  .post {
+    margin: 1rem;
   }
   .widget {
     top: 0px;
@@ -80,6 +78,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #eeeeee;
+  background-color: rgba(238, 238, 238, 0.891);
 }
 
 .app .app__body {
