@@ -9,7 +9,7 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
-  width: 85vw;
+  width: 60vw;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -97,11 +97,11 @@ body {
   border-radius: 30px;
   display: flex;
   padding: 1rem;
-  color: #8b8888;
+  color: #5c5c5c;
 }
 
 .feed .feed__inputContainer .feed__input:hover {
-  background-color: #eeeeee;
+  background-color: #9b9b9b;
 }
 
 .feed .feed__inputContainer .feed__input form {

@@ -9,7 +9,7 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
-  width: 85vw;
+  width: 60vw;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -104,7 +104,7 @@ body {
 
 .sidebar .sidebar__top h4 {
   font-size: 1.2rem;
-  color: #8b8888;
+  color: #5c5c5c;
   padding: 0 1rem;
 }
 
@@ -138,7 +138,7 @@ body {
 
 .sidebar .sidebar__stats .sidebar__stat p {
   font-size: 1.4rem;
-  color: #8b8888;
+  color: #5c5c5c;
   font-weight: 600;
 }
 
@@ -163,7 +163,7 @@ body {
 }
 
 .sidebar .sidebar__bottom .sidebar__recent {
-  color: #8b8888;
+  color: #5c5c5c;
   cursor: pointer;
   display: flex;
   margin: 0.25rem 0;
@@ -171,7 +171,7 @@ body {
 }
 
 .sidebar .sidebar__bottom .sidebar__recent:hover {
-  background: #eeeeee;
+  background: #9b9b9b;
   color: black;
   border-radius: 10px;
 }
