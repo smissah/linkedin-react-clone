@@ -3,6 +3,10 @@
 .widget {
   @include sectionSpaceStyle;
   margin-right: 0;
-  background: rgb(70, 70, 70);
+  top: 80px;
+  position: sticky;
   flex: 0.2;
+  height: fit-content;
+  text-align: center;
+  background: rgb(158, 156, 156);
 }

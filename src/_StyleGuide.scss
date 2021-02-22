@@ -1,6 +1,15 @@
-html {
+html,
+body {
   font-size: 62.5%;
+  // width: 100vw !important;
+  min-width: 400px;
 }
+
+@mixin sectionSpaceStyle {
+  margin: $marginLarge $marginNormal;
+  border-radius: $mediumRad;
+}
+
 //------------------------
 $fontNormal: 1.6rem;
 $fontSmall: 1.4rem;
@@ -47,11 +56,62 @@ $aniSpeed: 0.25s ease-in-out;
 
 //media queries
 @media screen and (max-width: 800px) {
+  html {
+    width: 100% !important;
+  }
+  //!container- main body
   .container {
-    width: 100vw;
+    width: 100%;
+  }
+
+  .app__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  //!header
+  .headerOption {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  //!sidebar
+  .sidebar {
+    top: 0px;
+    position: relative;
+  }
+
+  //!feed
+
+  .feed {
+    width: 100%;
+
+    .inputOption {
+      font-size: lrem;
+      margin: 0.5rem !important;
+      padding: 2px 5px;
+    }
+
+    .feed__inputOptions {
+      width: 50%;
+      transform: translateX(50%);
+      flex-direction: row;
+    }
+  }
+
+  .post__buttons {
+    width: 100%;
+    // flex-direction: column;
+  }
+
+  //!widget
+  .widget {
+    top: 0px;
+    position: relative;
+    width: 100%;
+    margin: 0 !important;
   }
 }
-
 //scroll bar
 
 /* width */
@@ -75,8 +135,3 @@ $aniSpeed: 0.25s ease-in-out;
 }
 
 //!mixins
-
-@mixin sectionSpaceStyle {
-  margin: $marginLarge $marginNormal;
-  border-radius: $mediumRad;
-}

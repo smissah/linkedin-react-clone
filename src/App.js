@@ -11,14 +11,10 @@ import Widget from "./components/Widget/Widget";
 function App() {
   return (
     <div className="app">
-      {/* header */}
       <Header />
-
       <div className="app__body container">
-        {/* sidebar */}
         <Sidebar />
         <Feed />
-        {/* //widgets */}
         <Widget />
       </div>
     </div>

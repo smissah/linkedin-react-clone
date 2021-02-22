@@ -46,7 +46,8 @@ const Feed = () => {
 
   //----------------
   return (
-    <div className="feed">
+    <div className="feed container">
+      {/* <div className="feed "> */}
       <div className="feed__inputContainer">
         <div className="feed__input">
           <CreateIcon />
@@ -60,7 +61,7 @@ const Feed = () => {
             <button type="submit"></button>
           </form>
         </div>
-        <div className="feed_inputOptions">
+        <div className="feed__inputOptions">
           {/* input options */}
           <InputOption title="Image" Icon={ImageIcon} color="#70B5F9" />
           <InputOption title="Video" Icon={SubscriptionsIcon} color="#7FC15E" />
