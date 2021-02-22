@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector, useDispatch, Provider } from "react-redux";
 import "./App.css";
 import { selectUser } from "./features/userSlice";
 import Feed from "./components/Feed/Feed";
@@ -10,22 +11,23 @@ import Login from "./components/Login/Login";
 //components
 
 function App() {
-  const user = userSelector(selectUser);
-
-  <div className="app">
-    <Header />
-
-    {!user ? (
-      <Login />
-    ) : (
+  const user = useSelector(selectUser);
+  return (
+    <div className="app">
+      <Header />
       <div className="app__body container">
-        {" "}
-        <Sidebar />
-        <Feed />
-        <Widget />
+        {!user ? (
+          <Login />
+        ) : (
+          <>
+            <Sidebar />
+            <Feed />
+            <Widget />
+          </>
+        )}
       </div>
-    )}
-  </div>;
+    </div>
+  );
 }
 
 export default App;

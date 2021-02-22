@@ -17,7 +17,7 @@ export const userSlice = createSlice({
 
 export const { login, logout } = userSlice.actions;
 
-// /selectors
+// /selectors - used to pull the about data into other components
 export const selectUser = (state) => state.user.user;
 
 export default userSlice.reducer;
