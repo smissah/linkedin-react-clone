@@ -15,8 +15,6 @@ const Login = () => {
   const handleLogin = (e) => {
     console.log("Loginning in");
     e.preventDefault();
-
-    // auth
   };
   const toggleVisibility = () => {
     setVisibility(!visibility);
