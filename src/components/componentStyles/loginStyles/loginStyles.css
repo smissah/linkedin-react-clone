@@ -1,4 +1,158 @@
+html,
+body {
+  font-size: 62.5%;
+  width: 100vw !important;
+  min-width: 400px !important;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 85vw;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+  .app__body {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerOption {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar {
+    width: 100%;
+    top: 0px;
+    position: relative;
+  }
+  .feed {
+    width: 100%;
+    padding: 0 !important;
+  }
+  .feed .feed__inputContainer {
+    padding: auto 0 !important;
+  }
+  .feed .inputOption {
+    font-size: lrem;
+    margin: 1.5rem 0.5rem 0.25rem 0.5rem !important;
+    padding: 5px 5px;
+  }
+  .post {
+    margin: 1rem;
+  }
+  .widget {
+    top: 0px;
+    position: relative;
+    width: 100%;
+    margin: 0 !important;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fafafa;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0a66c2;
+}
+
 .login {
-  background: red;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login p {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.login .login__form {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  min-width: 200px;
+}
+
+.login .login__form input {
+  border-radius: 5px;
+  outline: none;
+  border: solid 1px lightgrey;
+  padding: 2rem;
+  padding-right: 4rem;
+  width: 100%;
+  height: 4rem;
+  background: #fafafa;
+  margin-bottom: 1.5rem;
+}
+
+.login .login__form input:hover {
+  background: #eeeeee;
+}
+
+.login button {
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  border-radius: 5px;
+  background: #0a66c2;
+  height: 3.2rem;
+  outline: none;
+}
+
+.login button:hover {
+  background: #095aac;
+}
+
+.login img {
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 2rem;
+}
+
+.pass {
+  position: relative;
+  display: flex;
+}
+
+.pass .visibility {
+  cursor: pointer;
+  padding: 0.5rem;
+  position: absolute;
+  top: 15%;
+  right: 1rem;
+  color: black;
+}
+
+.icon {
+  color: #0a66c2;
+  transform: scale(1.2);
+}
+
+.login__register {
+  cursor: pointer;
+  color: #0a66c2;
 }
 /*# sourceMappingURL=loginStyles.css.map */

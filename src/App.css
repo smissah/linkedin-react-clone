@@ -3,6 +3,7 @@ body {
   font-size: 62.5%;
   width: 100vw !important;
   min-width: 400px !important;
+  height: 100vh;
 }
 
 .container {
@@ -76,6 +77,7 @@ body {
 
 .app {
   display: flex;
+  height: 100vh;
   flex-direction: column;
   background-color: #eeeeee;
   background-color: rgba(238, 238, 238, 0.891);
