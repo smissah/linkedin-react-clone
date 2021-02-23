@@ -36,7 +36,7 @@ const Login = () => {
         <input
           type="text"
           value={name}
-          onChange={(e) => setName(e.target.value.trim())}
+          onChange={(e) => setName(e.target.value)}
           placeholder="Full Name"
         />
         <input type="text" text="" placeholder="Profile URL (optional)" />
