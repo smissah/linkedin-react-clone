@@ -48,7 +48,7 @@ $marginLarge: 2rem;
 .container {
   display: flex;
   justify-content: space-between;
-  width: 60vw;
+  width: 65vw;
   margin: 0 auto;
   padding: $paddingLarge;
   //   background: red;
@@ -72,6 +72,7 @@ $aniSpeed: 0.25s ease-in-out;
     display: flex;
     flex-direction: column;
     // background: red;
+    padding-top: 0;
   }
 
   //!header

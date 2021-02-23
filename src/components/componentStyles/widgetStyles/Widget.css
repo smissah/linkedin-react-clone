@@ -9,7 +9,7 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
-  width: 60vw;
+  width: 65vw;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -21,6 +21,7 @@ body {
   .app__body {
     display: flex;
     flex-direction: column;
+    padding-top: 0;
   }
   .headerOption {
     display: none;
@@ -79,11 +80,12 @@ body {
   margin: 2rem 0.25rem;
   border-radius: 10px;
   margin-right: 0;
-  top: 80px;
   position: sticky;
+  width: 100%;
+  top: 90px;
   flex: 0.2;
   height: fit-content;
   text-align: center;
-  background: #9e9c9c;
+  background: #cccbcb;
 }
 /*# sourceMappingURL=Widget.css.map */

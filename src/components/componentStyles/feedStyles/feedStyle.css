@@ -9,7 +9,7 @@ body {
 .container {
   display: flex;
   justify-content: space-between;
-  width: 60vw;
+  width: 65vw;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -21,6 +21,7 @@ body {
   .app__body {
     display: flex;
     flex-direction: column;
+    padding-top: 0;
   }
   .headerOption {
     display: none;
