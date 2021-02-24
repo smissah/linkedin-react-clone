@@ -3,7 +3,7 @@
   top: 0;
   display: flex;
   justify-content: space-between !important;
-  position: fixed;
+  position: sticky;
   width: 100%;
   border-bottom: 0.5px solid $clr-border;
   height: 50px;
