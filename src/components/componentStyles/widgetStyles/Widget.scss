@@ -1,13 +1,20 @@
 @import "../../../StyleGuide";
 
 .widget {
+  position: sticky;
+  top: 80px;
   @include sectionSpaceStyle;
   margin-left: 0;
-  top: 80px;
-  transform: translateY(50%);
-  position: sticky;
-  flex: 0.25;
-  height: fit-content;
-  text-align: center;
-  background: rgb(170, 26, 26);
+  flex: 0.2;
+  .widget__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: $paddingNormal;
+
+    h2 {
+      font-size: $fontNormal;
+      font-weight: 400;
+    }
+  }
 }

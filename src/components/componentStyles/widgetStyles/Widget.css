@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 65vw;
-  margin: 0 auto;
+  margin: auto;
   padding: 2rem;
   height: 100%;
 }
@@ -78,15 +78,23 @@ body {
 }
 
 .widget {
+  position: sticky;
+  top: 80px;
   margin: 2rem 0.25rem;
   border-radius: 10px;
   margin-left: 0;
-  top: 80px;
-  transform: translateY(50%);
-  position: sticky;
-  flex: 0.25;
-  height: fit-content;
-  text-align: center;
-  background: #aa1a1a;
+  flex: 0.2;
+}
+
+.widget .widget__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.widget .widget__header h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 /*# sourceMappingURL=Widget.css.map */

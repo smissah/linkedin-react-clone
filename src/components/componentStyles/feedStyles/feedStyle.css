@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 65vw;
-  margin: 0 auto;
+  margin: auto;
   padding: 2rem;
   height: 100%;
 }
@@ -83,7 +83,7 @@ body {
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
-  flex: 0.55;
+  flex: 0.6;
 }
 
 .feed .feed__inputContainer {

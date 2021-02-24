@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 65vw;
-  margin: 0 auto;
+  margin: auto;
   padding: 2rem;
   height: 100%;
 }
