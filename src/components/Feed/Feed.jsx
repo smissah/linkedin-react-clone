@@ -5,12 +5,16 @@ import ImageIcon from "@material-ui/icons/Image";
 import SubscriptionsIcon from "@material-ui/icons/Subscriptions";
 import EventNoteIcon from "@material-ui/icons/EventNote";
 import CalendarViewDayIcon from "@material-ui/icons/CalendarViewDay";
+import { useSelector } from "react-redux";
+
+import { selectUser } from "../../features/userSlice.js";
 import InputOption from "../InputOption";
 import Post from "../Posts/Post";
 import { db } from "../../firebase";
 import firebase from "firebase";
 
 const Feed = () => {
+  const user = useSelector(selectUser);
   const [input, setInput] = useState("");
   const [posts, setPosts] = useState([]);
 
@@ -34,16 +38,17 @@ const Feed = () => {
     console.log("submit");
     //push to database
     db.collection("posts").add({
-      name: "Stephen Missah",
-      description: "this is a test",
+      name: user.displayName,
+      description: user.email,
       message: input,
-      photoUrl: "",
+      photoUrl: user.photoUrl || "",
       //using server timestamp keeps time the same regardless of lcation
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     });
     setInput("");
   };
 
+  console.log(user);
   //----------------
   return (
     <div className="feed container">
@@ -74,17 +79,21 @@ const Feed = () => {
         </div>
       </div>
 
-      {/* <div className="feed__posts">
-        {posts.map(({ id, data: { name, description, message, photoUrl } }) => (
-          <Post
-            key={id}
-            displayName={name}
-            description={description}
-            message={message}
-            // photoUrl={photoUrl}
-          />
-        ))}
-      </div> */}
+      <div className="feed__posts">
+        {posts.map(({ id, data: { name, description, message, photoUrl } }) => {
+          return (
+            <Post
+              key={id}
+              name={name}
+              // name={displayName}
+              description={description}
+              message={message}
+              photoUrl={photoUrl}
+              //! this is all fine
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

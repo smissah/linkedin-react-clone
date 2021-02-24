@@ -8,7 +8,7 @@ import ChatIcon from "@material-ui/icons/Chat";
 import InputOption from "../InputOption";
 
 const Post = ({
-  displayName = "unknown",
+  name = "unknown",
   message = "no message",
   description = "no description",
   photoUrl = "",
@@ -16,9 +16,9 @@ const Post = ({
   return (
     <div className="post">
       <div className="post__header">
-        <Avatar />
+        <Avatar src={photoUrl}>{name?.[0].toLocaleUpperCase()}</Avatar>
         <div className="post__info">
-          <h2>{displayName}</h2>
+          <h2>{name}</h2>
           <p>{description}</p>
         </div>
       </div>

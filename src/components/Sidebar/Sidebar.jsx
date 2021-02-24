@@ -14,7 +14,7 @@ const Sidebar = () => {
   };
 
   const user = useSelector(selectUser);
-  console.log(user);
+  // console.log(user);
   const { displayName, email, photoUrl } = user;
   return (
     <div className="sidebar">
