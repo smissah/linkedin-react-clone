@@ -6,11 +6,13 @@ export const themeSlice = createSlice({
   },
 
   reducer: {
-    themeLight: (state) => {
-      state.theme = "light";
+    themeLight: (state, action) => {
+      // state.theme = "light";
+      state.theme = action.payload;
     },
     themeDark: (state) => {
-      state.theme = "dark";
+      // state.theme = "dark";
+      state.theme = action.payload;
     },
   },
 });

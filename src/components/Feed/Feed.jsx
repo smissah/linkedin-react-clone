@@ -78,10 +78,10 @@ const Feed = () => {
         {posts.map(({ id, data: { name, description, message, photoUrl } }) => (
           <Post
             key={id}
-            name={name}
+            displayName={name}
             description={description}
             message={message}
-            photoUrl={photoUrl}
+            // photoUrl={photoUrl}
           />
         ))}
       </div>

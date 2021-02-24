@@ -6,6 +6,7 @@ export const userSlice = createSlice({
     user: null,
   },
   reducers: {
+    //reducers - functions that allow us to manipulate the state
     login: (state, action) => {
       state.user = action.payload;
     },
@@ -17,7 +18,7 @@ export const userSlice = createSlice({
 
 export const { login, logout } = userSlice.actions;
 
-// /selectors - used to pull the about data into other components
+// /selectors - used to pull the out data into other components
 export const selectUser = (state) => state.user.user;
 
 export default userSlice.reducer;
