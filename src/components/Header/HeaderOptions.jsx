@@ -8,7 +8,7 @@ import "../componentStyles/headerStyles/HeaderOptions.css";
 const HeaderOptions = ({ avatar, Icon, title }) => {
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
-
+  // console.log(user);
   const handleSignOut = () => {
     dispatch(logout());
     auth.signOut();
@@ -21,7 +21,10 @@ const HeaderOptions = ({ avatar, Icon, title }) => {
           className="headerOption__icon headerOption__avatar"
           src={user?.photoUrl} //!optional chaining
           onClick={handleSignOut}
-        />
+        >
+          {/* {user?.email[0].toUpperCase()} */}
+          {user?.email ? user?.email[0].toUpperCase() : ""}
+        </Avatar>
       )}
       <h3 className="headerOption__title">{title}</h3>
     </div>
