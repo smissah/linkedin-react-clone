@@ -3,7 +3,8 @@
   top: 0;
   display: flex;
   justify-content: space-between !important;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   border-bottom: 0.5px solid $clr-border;
   height: 50px;
   padding: $paddingMedium $paddingNormal;
