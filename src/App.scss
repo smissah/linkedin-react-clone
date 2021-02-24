@@ -2,14 +2,17 @@
 
 .app {
   display: flex;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   background-color: $clr-lightgrey;
   background-color: $clr-appbg;
+  // background: red;
 
   .app__body {
+    display: flex;
     height: fit-content;
     height: 100hv;
-    height: fit-content;
+    margin-top: $marginLarge;
+    // background: rgb(0, 255, 128);
   }
 }

@@ -12,6 +12,7 @@ body {
   width: 65vw;
   margin: 0 auto;
   padding: 2rem;
+  height: 100%;
 }
 
 @media screen and (max-width: 800px) {
@@ -79,11 +80,10 @@ body {
 .widget {
   margin: 2rem 0.25rem;
   border-radius: 10px;
-  margin-right: 0;
+  margin-left: 0;
+  top: 80px;
   position: sticky;
-  width: 100%;
-  top: 90px;
-  flex: 0.2;
+  flex: 0.25;
   height: fit-content;
   text-align: center;
   background: #cccbcb;

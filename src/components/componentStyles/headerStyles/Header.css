@@ -12,6 +12,7 @@ body {
   width: 65vw;
   margin: 0 auto;
   padding: 2rem;
+  height: 100%;
 }
 
 @media screen and (max-width: 800px) {

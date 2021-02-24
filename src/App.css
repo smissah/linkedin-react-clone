@@ -12,6 +12,7 @@ body {
   width: 65vw;
   margin: 0 auto;
   padding: 2rem;
+  height: 100%;
 }
 
 @media screen and (max-width: 800px) {
@@ -78,15 +79,16 @@ body {
 
 .app {
   display: flex;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
   background-color: #ebebeb;
   background-color: rgba(238, 238, 238, 0.891);
 }
 
 .app .app__body {
+  display: flex;
   height: fit-content;
   height: 100hv;
-  height: fit-content;
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=App.css.map */
