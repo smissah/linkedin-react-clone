@@ -74,7 +74,7 @@ const Feed = () => {
         </div>
       </div>
 
-      <div className="feed__posts">
+      {/* <div className="feed__posts">
         {posts.map(({ id, data: { name, description, message, photoUrl } }) => (
           <Post
             key={id}
@@ -84,7 +84,7 @@ const Feed = () => {
             // photoUrl={photoUrl}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

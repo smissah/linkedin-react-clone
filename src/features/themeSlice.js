@@ -10,7 +10,7 @@ export const themeSlice = createSlice({
       // state.theme = "light";
       state.theme = action.payload;
     },
-    themeDark: (state) => {
+    themeDark: (state, action) => {
       // state.theme = "dark";
       state.theme = action.payload;
     },

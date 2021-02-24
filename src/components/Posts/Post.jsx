@@ -8,7 +8,7 @@ import ChatIcon from "@material-ui/icons/Chat";
 import InputOption from "../InputOption";
 
 const Post = ({
-  name = "unknown",
+  displayName = "unknown",
   message = "no message",
   description = "no description",
   photoUrl = "",
@@ -18,7 +18,7 @@ const Post = ({
       <div className="post__header">
         <Avatar />
         <div className="post__info">
-          <h2>{name}</h2>
+          <h2>{displayName}</h2>
           <p>{description}</p>
         </div>
       </div>
