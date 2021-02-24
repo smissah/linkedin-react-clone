@@ -4,9 +4,10 @@
   @include sectionSpaceStyle;
   margin-left: 0;
   top: 80px;
+  transform: translateY(50%);
   position: sticky;
   flex: 0.25;
   height: fit-content;
   text-align: center;
-  background: rgb(204, 203, 203);
+  background: rgb(170, 26, 26);
 }
