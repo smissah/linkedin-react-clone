@@ -18,7 +18,7 @@ const Post = forwardRef(
     ref
   ) => {
     return (
-      <div className="post">
+      <div ref={ref} className="post">
         <div className="post__header">
           <Avatar src={photoUrl}>{name?.[0].toLocaleUpperCase()}</Avatar>
           <div className="post__info">
