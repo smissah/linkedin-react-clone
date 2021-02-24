@@ -25,7 +25,7 @@ function App() {
             email: userAuth.email,
             uid: userAuth.uid,
             displayName: userAuth.displayName,
-            photoUrl: userAuth.photoUrl, //! ARE YOU PASSING THE CORRECT THING?
+            photoUrl: userAuth.photoURL, //! ARE YOU PASSING THE CORRECT THING? UPPERCASE!!!!!
           })
         );
       } else {

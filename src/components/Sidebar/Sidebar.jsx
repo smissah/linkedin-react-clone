@@ -15,7 +15,7 @@ const Sidebar = () => {
 
   const user = useSelector(selectUser);
   console.log(user);
-  const { displayName, email, profileUrl } = user;
+  const { displayName, email, photoUrl } = user;
   return (
     <div className="sidebar">
       <div className="sidebar__top">
@@ -25,7 +25,10 @@ const Sidebar = () => {
           className="sidebar__banner"
         />
         {/* <Avatar className="sidebar__avatar"> {email[0].toUpperCase()}</Avatar> */}
-        <Avatar className="sidebar__avatar" />
+        <Avatar className="sidebar__avatar" src={photoUrl}>
+          {" "}
+          {email[0].toUpperCase()}
+        </Avatar>
         <h2>{displayName}</h2>
         <h4>{email}</h4>
       </div>
