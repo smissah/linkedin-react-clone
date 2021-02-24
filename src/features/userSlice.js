@@ -8,7 +8,8 @@ export const userSlice = createSlice({
       email: null,
       uid: null,
       displayName: null,
-      profileUrl: null,
+      photoURL: "",
+      // profileUrl: null,
     },
   },
   reducers: {

@@ -28,7 +28,7 @@ const Login = () => {
             email: userAuth.user.email,
             uid: userAuth.user.uid,
             displayName: userAuth.user.displayName,
-            profileUrl: userAuth.user.photoUrl,
+            profileUrl: userAuth.user.photoURL,
           })
         );
       })
@@ -53,7 +53,7 @@ const Login = () => {
             //!keybasekey: localname
 
             displayName: name,
-            photoUrl: profilePic,
+            photoURL: profilePic,
           })
           .then(() => {
             //push info to store
@@ -62,7 +62,7 @@ const Login = () => {
                 email: userAuth.user.email,
                 uid: userAuth.user.uid,
                 displayName: name,
-                photoUrl: profilePic,
+                photoURL: profilePic,
               })
             );
           });
