@@ -26,8 +26,7 @@ const Sidebar = () => {
         />
         {/* <Avatar className="sidebar__avatar"> {email[0].toUpperCase()}</Avatar> */}
         <Avatar className="sidebar__avatar" src={photoUrl}>
-          {" "}
-          {email[0].toUpperCase()}
+          {email && email[0].toUpperCase()}
         </Avatar>
         <h2>{displayName}</h2>
         <h4>{email}</h4>

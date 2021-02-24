@@ -1,11 +1,13 @@
 import React from "react";
-import { useDispatch } from "react-redux";
-import { logout } from "../../features/userSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { logout, selectUser } from "../../features/userSlice";
 import { Avatar } from "@material-ui/core";
 import { auth } from "../../firebase";
+
 import "../componentStyles/headerStyles/HeaderOptions.css";
 const HeaderOptions = ({ avatar, Icon, title }) => {
   const dispatch = useDispatch();
+  const user = useSelector(selectUser);
 
   const handleSignOut = () => {
     dispatch(logout());
@@ -17,7 +19,7 @@ const HeaderOptions = ({ avatar, Icon, title }) => {
       {avatar && (
         <Avatar
           className="headerOption__icon headerOption__avatar"
-          src={avatar}
+          src={user?.photoUrl} //!optional chaining
           onClick={handleSignOut}
         />
       )}
