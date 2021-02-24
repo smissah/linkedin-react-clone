@@ -9,6 +9,7 @@ const Login = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [profilePic, setProfilePic] = useState("");
 
   //functions
 
@@ -20,8 +21,20 @@ const Login = () => {
     setVisibility(!visibility);
   };
 
-  const register = () => {
+  const handleRegister = () => {
     console.log("register user");
+    if (!name) {
+      return alert("Please enter your full name");
+    }
+
+    auth.createUserWithEmailAndPassword(email, password).then((userAuth) => {
+      userAuth.user.updateProfile({
+        //left are keys for firebase - dont change this
+
+        displayName: name,
+        photoUrl: profilePic,
+      });
+    });
   };
 
   //----------------------------------
@@ -39,13 +52,19 @@ const Login = () => {
           onChange={(e) => setName(e.target.value)}
           placeholder="Full Name"
         />
-        <input type="text" text="" placeholder="Profile URL (optional)" />
         <input
           type="email"
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value.trim())}
         />
+        <input
+          type="text"
+          value={profilePic}
+          onChange={(e) => setProfilePic(e.target.value)}
+          placeholder="Profile URL (optional)"
+        />
+
         <div className="pass">
           <div className="visibility" onClick={toggleVisibility}>
             {visibility ? (
@@ -72,7 +91,7 @@ const Login = () => {
 
       <p>
         Not a member? {"  "}
-        <span className="login__register" onClick={register}>
+        <span className="login__register" onClick={handleRegister}>
           Register now
         </span>
       </p>
