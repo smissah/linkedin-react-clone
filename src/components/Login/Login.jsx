@@ -3,6 +3,8 @@ import VisibilityIcon from "@material-ui/icons/Visibility";
 import VisibilityOffIcon from "@material-ui/icons/VisibilityOff";
 import "../componentStyles/loginStyles/loginStyles.css";
 import { auth } from "../../firebase";
+import { login } from "../../features/userSlice";
+import { useDispatch } from "react-redux";
 
 const Login = () => {
   const [visibility, setVisibility] = useState(false);
@@ -11,6 +13,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const [profilePic, setProfilePic] = useState("");
 
+  const dispatch = useDispatch();
   //functions
 
   const handleLogin = (e) => {
@@ -27,14 +30,30 @@ const Login = () => {
       return alert("Please enter your full name");
     }
 
-    auth.createUserWithEmailAndPassword(email, password).then((userAuth) => {
-      userAuth.user.updateProfile({
-        //left are keys for firebase - dont change this
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((userAuth) => {
+        userAuth.user
+          .updateProfile({
+            //left are keys for firebase - dont change this
+            //!keybasekey: localname
 
-        displayName: name,
-        photoUrl: profilePic,
-      });
-    });
+            displayName: name,
+            photoUrl: profilePic,
+          })
+          .then(() => {
+            //push info to store
+            dispatch(
+              login({
+                email: userAuth.user.email,
+                uid: userAuth.user.uid,
+                displayName: name,
+                photoUrl: profilePic,
+              })
+            );
+          });
+      })
+      .catch((error) => alert(error));
   };
 
   //----------------------------------

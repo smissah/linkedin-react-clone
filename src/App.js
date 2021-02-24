@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useSelector, useDispatch, Provider } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import "./App.css";
 import { selectUser, login, logout } from "./features/userSlice";
 import Feed from "./components/Feed/Feed";
@@ -14,6 +14,7 @@ import { auth } from "./firebase";
 function App() {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
+
   useEffect(() => {
     //listening for persisted auth change - aka sign in
     auth.onAuthStateChanged((userAuth) => {
@@ -24,7 +25,7 @@ function App() {
             email: userAuth.email,
             uid: userAuth.uid,
             displayName: userAuth.displayName,
-            photoUrl: userAuth.photoUrl,
+            photoUrl: userAuth.photoUrl, //! ARE YOU PASSING THE CORRECT THING?
           })
         );
       } else {
