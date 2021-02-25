@@ -1,9 +1,5 @@
-html,
-body {
+html {
   font-size: 62.5%;
-  width: 100% !important;
-  min-width: 400px !important;
-  height: 100vh;
 }
 
 .container {

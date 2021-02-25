@@ -38,7 +38,7 @@ function App() {
   //----------------------
   return (
     <div className="app">
-      <Header />
+      {user && <Header />}
       <div className="app__body container">
         {!user ? (
           <Login />
