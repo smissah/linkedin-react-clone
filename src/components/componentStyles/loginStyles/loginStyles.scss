@@ -1,9 +1,10 @@
 @import "../../../StyleGuide";
 .login {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  display: grid;
+  place-items: center;
+  transform: translateY(50%);
   p {
     margin-top: $marginNormal;
     font-size: $fontSmall;
