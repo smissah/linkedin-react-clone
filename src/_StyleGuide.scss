@@ -1,7 +1,9 @@
 html {
   font-size: 62.5%;
 }
-
+body {
+  background: rgba(218, 218, 218, 0.891);
+}
 //!mixins
 
 @mixin sectionSpaceStyle {
@@ -97,9 +99,10 @@ $aniSpeed: 0.25s ease-in-out;
     width: 100%;
   }
 
-  // .app {
-  //   background: rgba(255, 255, 255, 0.124);
-  // }
+  .app {
+    background: rgba(194, 16, 16, 0.124);
+    min-width: 425px;
+  }
   .app__body {
     display: flex;
     flex-direction: column;
