@@ -1,14 +1,14 @@
 html {
   font-size: 62.5%;
 
-  $clr-appbg: rgba(218, 218, 218, 0.891);
-  $clr-drkgrey: rgb(194, 194, 194);
-  $clr-grey: rgb(92, 92, 92);
-  $clr-lightgrey: rgb(235, 235, 235);
-  $clr-lightBlue: #eef3f8;
-  $clr-offWhite: rgb(250, 250, 250);
-  $clr-border: lightgrey;
-  $clr-blueMain: #0277b7;
+  --clr-appbg: rgba(218, 218, 218, 0.891);
+  --clr-drkgrey: rgb(194, 194, 194);
+  --clr-grey: rgb(92, 92, 92);
+  --clr-lightgrey: rgb(235, 235, 235);
+  --clr-lightBlue: #eef3f8;
+  --clr-offWhite: rgb(250, 250, 250);
+  --clr-border: lightgrey;
+  --clr-blueMain: #0277b7;
 }
 body {
   background: rgba(224, 224, 224, 0.891);
@@ -38,7 +38,14 @@ $fontSmall: 1.4rem;
 
 //colors
 
-// $clr-blueMain: #0a66c2;
+$clr-appbg: rgba(218, 218, 218, 0.891);
+$clr-drkgrey: rgb(194, 194, 194);
+$clr-grey: rgb(92, 92, 92);
+$clr-lightgrey: rgb(235, 235, 235);
+$clr-lightBlue: #eef3f8;
+$clr-offWhite: rgb(250, 250, 250);
+$clr-border: lightgrey;
+$clr-blueMain: #0277b7;
 
 //radius
 
