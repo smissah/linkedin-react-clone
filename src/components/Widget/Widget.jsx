@@ -5,15 +5,17 @@ import InfoIcon from "@material-ui/icons/Info";
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 const Widget = () => {
   const newsLetters = (heading, subtitle) => {
-    <div className="widget__article">
-      <div className="widget__articleLeft">
-        <FiberManualRecordIcon />
+    return (
+      <div className="widget__article">
+        <div className="widget__articleLeft">
+          <FiberManualRecordIcon />
+        </div>
+        <div className="widet__articleRight">
+          <h2>{heading}</h2>
+          <p>{subtitle}</p>
+        </div>
       </div>
-      <div className="widet__articleRight">
-        <h2>{heading}</h2>
-        <p>{subtitle}</p>
-      </div>
-    </div>;
+    );
   };
   return (
     <div className="widget ">
@@ -22,7 +24,6 @@ const Widget = () => {
         <InfoIcon />
       </div>
       {newsLetters("Is Redux dead?", "Find out why - 500 readers")}
-      <h2>HII</h2>
     </div>
   );
 };
