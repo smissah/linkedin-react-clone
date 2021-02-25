@@ -10,7 +10,7 @@ const Widget = () => {
         <div className="widget__articleLeft">
           <FiberManualRecordIcon />
         </div>
-        <div className="widet__articleRight">
+        <div className="widget__articleRight">
           <h2>{heading}</h2>
           <p>{subtitle}</p>
         </div>
@@ -23,6 +23,9 @@ const Widget = () => {
         <h2>LinkedIn News</h2>
         <InfoIcon />
       </div>
+      {newsLetters("Covid-X: UK updates", " - 6650 readers")}
+      {newsLetters("Is Redux dead?", "Find out why - 500 readers")}
+      {newsLetters("Redux is amazing", "Web Dev- 500 readers")}
       {newsLetters("Is Redux dead?", "Find out why - 500 readers")}
     </div>
   );

@@ -1,30 +1,67 @@
 @import "../../../StyleGuide";
 
 .widget {
-  @include sectionSpaceStyle;
-  background-color: rgb(199, 199, 199);
-  position: sticky;
-  top: 80px;
+  background-color: $clr-offWhite;
   margin-left: 0;
   flex: 0.25;
-
   @include sectionSpaceStyle;
   margin-left: 0;
   top: 80px;
   position: sticky;
   height: fit-content;
   text-align: center;
+
   .widget__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: $paddingNormal;
+    background: $clr-drkgrey;
+    border-top-left-radius: $mediumRad;
+    border-top-right-radius: $mediumRad;
+    margin-bottom: 0;
 
     h2 {
       font-size: $fontNormal;
       font-weight: 400;
       text-align: left;
       padding-right: $paddingLarge;
+    }
+  }
+
+  .widget__article {
+    display: flex;
+    align-items: center;
+    @include specialLinksStyle;
+    width: 100%;
+    padding: $paddingMedium;
+    margin-top: 0;
+    margin-bottom: $marginSmall;
+    border-radius: 0px !important;
+    &:last-of-type {
+      border-bottom-left-radius: $mediumRad !important;
+      border-bottom-right-radius: $mediumRad !important;
+      margin-bottom: 0;
+    }
+
+    .widget__articleLeft {
+      margin-right: $marginNormal;
+      color: $clr-blueMain;
+      .MuiSvgIcon-root {
+        font-size: 1.2rem;
+      }
+    }
+
+    .widget__articleRight {
+      flex: 1;
+      text-align: left;
+      h2 {
+        font-size: 1.2rem;
+        color: black;
+      }
+      p {
+        font-size: 1.1rem;
+      }
     }
   }
 }
