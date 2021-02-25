@@ -6,7 +6,7 @@
 
   display: flex;
   flex-direction: column;
-  flex: 0.6;
+  flex: 0.55;
   //   justify-content: space-around;
 
   .feed__inputContainer {
@@ -20,14 +20,11 @@
     margin-bottom: $marginLarge;
 
     .feed__input {
+      @include specialLinksStyle;
       border: solid 1px $clr-border;
       border-radius: 30px;
       display: flex;
       padding: $paddingNormal;
-      color: $clr-grey;
-      &:hover {
-        background-color: $clr-lightgrey;
-      }
 
       form {
         display: flex;
@@ -35,13 +32,13 @@
 
         input {
           color: $clr-drkgrey;
-
           border: none;
           flex: 1;
           outline: none;
           font-weight: 600;
           margin: 0 $marginMedium;
           background: none;
+          cursor: pointer;
         }
 
         button {
@@ -53,6 +50,7 @@
     .feed__inputOptions {
       display: flex;
       justify-content: space-evenly;
+      cursor: pointer;
     }
   }
 }

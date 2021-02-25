@@ -1,7 +1,7 @@
 html,
 body {
   font-size: 62.5%;
-  width: 100vw !important;
+  width: 100% !important;
   min-width: 400px !important;
   height: 100vh;
 }
@@ -15,7 +15,28 @@ body {
   height: 100%;
 }
 
+@media screen and (max-width: 1230px) {
+  .container {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .container {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 95vw;
+  }
+}
+
 @media screen and (max-width: 800px) {
+  html {
+    overflow-x: hidden;
+  }
   .container {
     width: 100%;
   }

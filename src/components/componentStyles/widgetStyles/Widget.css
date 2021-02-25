@@ -1,7 +1,7 @@
 html,
 body {
   font-size: 62.5%;
-  width: 100vw !important;
+  width: 100% !important;
   min-width: 400px !important;
   height: 100vh;
 }
@@ -15,7 +15,28 @@ body {
   height: 100%;
 }
 
+@media screen and (max-width: 1230px) {
+  .container {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .container {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 95vw;
+  }
+}
+
 @media screen and (max-width: 800px) {
+  html {
+    overflow-x: hidden;
+  }
   .container {
     width: 100%;
   }
@@ -78,23 +99,33 @@ body {
 }
 
 .widget {
+  margin: 2rem 0.25rem;
+  border-radius: 10px;
+  background-color: #c7c7c7;
   position: sticky;
   top: 80px;
+  margin-left: 0;
+  flex: 0.25;
   margin: 2rem 0.25rem;
   border-radius: 10px;
   margin-left: 0;
-  flex: 0.2;
+  top: 80px;
+  position: sticky;
+  height: fit-content;
+  text-align: center;
 }
 
 .widget .widget__header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 1rem;
 }
 
 .widget .widget__header h2 {
   font-size: 1.6rem;
   font-weight: 400;
+  text-align: left;
+  padding-right: 2rem;
 }
 /*# sourceMappingURL=Widget.css.map */

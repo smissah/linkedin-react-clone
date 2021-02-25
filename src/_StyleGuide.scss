@@ -1,7 +1,7 @@
 html,
 body {
   font-size: 62.5%;
-  width: 100vw !important;
+  width: 100% !important;
   min-width: 400px !important;
   height: 100vh;
 }
@@ -12,6 +12,18 @@ body {
   border-radius: $mediumRad;
 }
 
+@mixin specialLinksStyle {
+  color: $clr-grey;
+  cursor: pointer;
+  margin: $marginSmall 0;
+  transition: color $aniSpeed;
+
+  &:hover {
+    background: $clr-lightgrey;
+    color: black;
+    border-radius: $mediumRad;
+  }
+}
 //------------------------
 $fontNormal: 1.6rem;
 $fontSmall: 1.4rem;
@@ -60,7 +72,29 @@ $marginLarge: 2rem;
 $aniSpeed: 0.25s ease-in-out;
 
 //media queries
+
+@media screen and (max-width: 1230px) {
+  .container {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .container {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 95vw;
+  }
+}
 @media screen and (max-width: 800px) {
+  html {
+    overflow-x: hidden;
+  }
+
   //!container- main body
   .container {
     width: 100%;

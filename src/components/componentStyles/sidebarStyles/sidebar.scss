@@ -80,18 +80,9 @@
     }
 
     .sidebar__recent {
-      color: $clr-grey;
-      cursor: pointer;
       display: flex;
-      margin: $marginSmall 0;
-      transition: color $aniSpeed;
 
-      &:hover {
-        background: $clr-lightgrey;
-        color: black;
-        border-radius: $mediumRad;
-      }
-
+      @include specialLinksStyle;
       .sidebar__hash {
         margin: 0 $marginMedium;
       }

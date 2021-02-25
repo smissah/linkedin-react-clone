@@ -1,7 +1,7 @@
 html,
 body {
   font-size: 62.5%;
-  width: 100vw !important;
+  width: 100% !important;
   min-width: 400px !important;
   height: 100vh;
 }
@@ -15,7 +15,28 @@ body {
   height: 100%;
 }
 
+@media screen and (max-width: 1230px) {
+  .container {
+    width: 75vw;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .container {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 95vw;
+  }
+}
+
 @media screen and (max-width: 800px) {
+  html {
+    overflow-x: hidden;
+  }
   .container {
     width: 100%;
   }
@@ -83,7 +104,7 @@ body {
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
-  flex: 0.6;
+  flex: 0.55;
 }
 
 .feed .feed__inputContainer {
@@ -95,15 +116,20 @@ body {
 }
 
 .feed .feed__inputContainer .feed__input {
+  color: #5c5c5c;
+  cursor: pointer;
+  margin: 0.25rem 0;
+  transition: color 0.25s ease-in-out;
   border: solid 1px lightgrey;
   border-radius: 30px;
   display: flex;
   padding: 1rem;
-  color: #5c5c5c;
 }
 
 .feed .feed__inputContainer .feed__input:hover {
-  background-color: #ebebeb;
+  background: #ebebeb;
+  color: black;
+  border-radius: 10px;
 }
 
 .feed .feed__inputContainer .feed__input form {
@@ -119,6 +145,7 @@ body {
   font-weight: 600;
   margin: 0 0.5rem;
   background: none;
+  cursor: pointer;
 }
 
 .feed .feed__inputContainer .feed__input form button {
@@ -128,5 +155,6 @@ body {
 .feed .feed__inputContainer .feed__inputOptions {
   display: flex;
   justify-content: space-evenly;
+  cursor: pointer;
 }
 /*# sourceMappingURL=feedStyle.css.map */

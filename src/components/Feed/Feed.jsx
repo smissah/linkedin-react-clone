@@ -51,7 +51,7 @@ const Feed = () => {
   console.log(user);
   //----------------
   return (
-    <div className="feed container">
+    <div className="feed">
       {/* <div className="feed "> */}
       <div className="feed__inputContainer">
         <div className="feed__input">
