@@ -81,26 +81,50 @@ $aniSpeed: 0.25s ease-in-out;
 
 //media queries
 
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1450px) {
   .container {
-    width: 75vw;
+    width: 95vw;
   }
 }
 
-@media screen and (max-width: 1015px) {
+@media screen and (max-width: 1200px) {
   .container {
-    width: 85vw;
+    width: 100%;
+  }
+
+  .feed {
+    flex: 0.55;
+  }
+
+  .sidebar {
+    flex: 0.2;
+  }
+
+  .widget {
+    flex: 0.25;
   }
 }
 
 @media screen and (max-width: 900px) {
   .container {
-    width: 95vw;
+    width: 100%;
+  }
+
+  .feed {
+    flex: 0.5;
+  }
+
+  .sidebar {
+    flex: 0.2;
+  }
+
+  .widget {
+    flex: 0.3;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   html {
-    overflow-x: hidden;
+    width: 100%;
   }
 
   //!container- main body

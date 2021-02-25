@@ -23,27 +23,45 @@ body {
   height: 100%;
 }
 
-@media screen and (max-width: 1230px) {
-  .container {
-    width: 75vw;
-  }
-}
-
-@media screen and (max-width: 1015px) {
-  .container {
-    width: 85vw;
-  }
-}
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1450px) {
   .container {
     width: 95vw;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+  .feed {
+    flex: 0.55;
+  }
+  .sidebar {
+    flex: 0.2;
+  }
+  .widget {
+    flex: 0.25;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+  .feed {
+    flex: 0.5;
+  }
+  .sidebar {
+    flex: 0.2;
+  }
+  .widget {
+    flex: 0.3;
+  }
+}
+
+@media screen and (max-width: 850px) {
   html {
-    overflow-x: hidden;
+    width: 100%;
   }
   .container {
     width: 100%;
@@ -111,8 +129,7 @@ body {
 
 .widget {
   background-color: #fafafa;
-  margin-left: 0;
-  flex: 0.25;
+  flex: 0.2;
   margin: 2rem 0.25rem;
   border-radius: 10px;
   margin-left: 0;
