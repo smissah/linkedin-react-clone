@@ -11,9 +11,19 @@ import Widget from "./components/Widget/Widget";
 import Login from "./components/Login/Login";
 import { auth } from "./firebase";
 
+//! custom hooks
+
+const useLocalState = (key, defaultValue) => {
+  const [value, setValue] = useState(defaultValue);
+  return ["one", () => {}];
+};
 //components
 
 function App() {
+  //DarkMode
+  const [username, setUsername] = useLocalState("username", "");
+  const [theme, setTheme] = useLocalState("theme", "dark");
+  //------------------------------------------------
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
 
