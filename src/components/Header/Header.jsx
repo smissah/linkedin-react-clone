@@ -10,9 +10,9 @@ import SmsIcon from "@material-ui/icons/Sms";
 import "font-awesome/css/font-awesome.min.css";
 import HeaderOptions from "./HeaderOptions";
 const Header = () => {
-  const optionsGen = (icon, name) => {
-    return <HeaderOptions Icon={icon} title={name} />;
-  };
+  // const optionsGen = (icon, name) => {
+  //   return <HeaderOptions Icon={icon} title={name} />;
+  // };
   const optionsList = [
     { graphic: HomeIcon, title: "Home" },
     { graphic: SupervisorAccountIcon, title: "Network" },
