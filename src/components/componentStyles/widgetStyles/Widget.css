@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background: rgba(218, 218, 218, 0.891);
+  background: rgba(224, 224, 224, 0.891);
 }
 
 .container {
@@ -41,7 +41,6 @@ body {
     width: 100%;
   }
   .app {
-    background: rgba(194, 16, 16, 0.124);
     min-width: 425px;
   }
   .app__body {
@@ -99,7 +98,7 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #0a66c2;
+  background: #0277b7;
 }
 
 .widget {
@@ -120,7 +119,8 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
-  background: #c2c2c2;
+  background: #0277b7;
+  color: white;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin-bottom: 0;
@@ -161,7 +161,7 @@ body {
 
 .widget .widget__article .widget__articleLeft {
   margin-right: 1rem;
-  color: #0a66c2;
+  color: #0277b7;
 }
 
 .widget .widget__article .widget__articleLeft .MuiSvgIcon-root {
