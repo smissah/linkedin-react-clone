@@ -23,10 +23,20 @@ const Widget = () => {
         <h2>LinkedIn News</h2>
         <InfoIcon />
       </div>
-      {newsLetters("Covid-X: UK updates", " - 6650 readers")}
-      {newsLetters("Is Redux dead?", "Find out why - 500 readers")}
-      {newsLetters("Redux is amazing", "Web Dev- 500 readers")}
-      {newsLetters("Is Redux dead?", "Find out why - 500 readers")}
+      {newsLetters("Covid-X: UK updates", " - 66.6K readers")}
+      {newsLetters("Falcon doors are back!", "Tesla - 77.4K readers")}
+      {newsLetters("Redux is amazing", "Web Dev- 50K readers")}
+      {newsLetters("Dogecoin - what is it?", "Crypto - 1K readers")}
+      {newsLetters("Bill Gates is at it again", "Bill Gates - 10K readers")}
+      {newsLetters("Need a creative designer?", "Find out more - 500 readers")}
+      {newsLetters(
+        "Why is Twitter axing Periscope?",
+        "Find out why - 3.0K readers"
+      )}
+      {newsLetters(
+        "Try new DarkMode for mobile users!",
+        "Find out how - 5.56k readers"
+      )}
     </div>
   );
 };
