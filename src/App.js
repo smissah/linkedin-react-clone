@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import "./App.css";
 import { selectUser, login, logout } from "./features/userSlice";
