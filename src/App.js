@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-
+import { ThemeProvider } from "styled-components";
 import "./App.css";
 import { selectUser, login, logout } from "./features/userSlice";
+import { selectTheme } from "./features/themeSlice";
 import Feed from "./components/Feed/Feed";
 import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
@@ -13,10 +14,14 @@ import { auth } from "./firebase";
 //! custom hooks
 
 //components
-
+console.log(localStorage);
 function App() {
   //DarkMode
+  const currentTheme = useSelector(selectTheme);
+  localStorage.setItem("sessionTheme", JSON.stringify(currentTheme));
+  const sessionThemeRetrieved = localStorage.getItem("sessionTheme");
 
+  console.log(JSON.parse(sessionThemeRetrieved));
   //-----------------------
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
@@ -44,20 +49,22 @@ function App() {
 
   //----------------------
   return (
-    <div className="app">
-      {user && <Header />}
-      <div className="app__body container">
-        {!user ? (
-          <Login />
-        ) : (
-          <>
-            <Sidebar />
-            <Feed />
-            <Widget />
-          </>
-        )}
+    <ThemeProvider theme={{ currentTheme }}>
+      <div className="app">
+        {user && <Header />}
+        <div className="app__body container">
+          {!user ? (
+            <Login />
+          ) : (
+            <>
+              <Sidebar />
+              <Feed />
+              <Widget />
+            </>
+          )}
+        </div>
       </div>
-    </div>
+    </ThemeProvider>
   );
 }
 

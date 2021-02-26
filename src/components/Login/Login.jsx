@@ -5,6 +5,7 @@ import "../componentStyles/loginStyles/loginStyles.css";
 import { auth } from "../../firebase";
 import { login } from "../../features/userSlice";
 import { useDispatch } from "react-redux";
+import DarkModeButton from "../DarkModeButton/DarkModeButton";
 
 const Login = () => {
   const [visibility, setVisibility] = useState(false);
@@ -74,6 +75,7 @@ const Login = () => {
   //----------------------------------
   return (
     <div className="login ">
+      <DarkModeButton />
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/1280px-LinkedIn_Logo.svg.png"
         alt=""
