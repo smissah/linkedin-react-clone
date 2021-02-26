@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-<<<<<<< HEAD
 import { Helmet, HelmetProvider } from "react-helmet-async";
-=======
->>>>>>> e19005100e7889bf7891b22dc4e733f2336bc754
 
 import "./App.css";
 import { selectUser, login, logout } from "./features/userSlice";
@@ -13,38 +10,19 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import Widget from "./components/Widget/Widget";
 import Login from "./components/Login/Login";
 import { auth } from "./firebase";
-<<<<<<< HEAD
-=======
-import { Helmet, HelmetProvider } from "react-helmet-async";
->>>>>>> e19005100e7889bf7891b22dc4e733f2336bc754
 
 //! custom hooks
 
-<<<<<<< HEAD
-const useLocalState = (key, defaultValue) => {
-  const [value, setValue] = useState(defaultValue);
-  return ["one", () => {}];
-};
 //components
 
 function App() {
   //DarkMode
-  const [username, setUsername] = useLocalState("username", "");
-  const [theme, setTheme] = useLocalState("theme", "dark");
-  //------------------------------------------------
-=======
-//my ucstom hook
-const useLocalState = (key, defaultValue) => {};
 
-//yarn.pm/gatsby-plugin-react-helmet-async
-
-//!-------------
-https: () => {
->>>>>>> e19005100e7889bf7891b22dc4e733f2336bc754
+  //-----------------------
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
 
-  //-----------------------
+  // login authentication
   useEffect(() => {
     //listening for persisted auth change - aka sign in
     auth.onAuthStateChanged((userAuth) => {
@@ -55,7 +33,7 @@ https: () => {
             email: userAuth.email,
             uid: userAuth.uid,
             displayName: userAuth.displayName,
-            photoUrl: userAuth.photoURL,
+            photoUrl: userAuth.photoURL, //! ARE YOU PASSING THE CORRECT THING? UPPERCASE!!!!!
           })
         );
       } else {
@@ -82,6 +60,6 @@ https: () => {
       </div>
     </div>
   );
-};
+}
 
 export default App;

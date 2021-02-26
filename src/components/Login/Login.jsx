@@ -91,6 +91,9 @@ const Login = () => {
           placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value.trim())}
+          onBlur={(e) => {
+            const localemail = e.target.value;
+          }}
         />
         <input
           type="text"
