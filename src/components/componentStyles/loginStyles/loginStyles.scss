@@ -28,6 +28,11 @@
       background: $clr-offWhite;
       margin-bottom: 1.5rem;
 
+      &:focus {
+        box-shadow: 0 0 0 4px rgba(38, 149, 209, 0.7);
+        outline: none;
+      }
+
       &:hover {
         background: $clr-lightgrey;
       }

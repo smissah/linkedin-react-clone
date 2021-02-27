@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-
-import "../componentStyles/DarkModeButton/index.css";
+import { IoSunny, IoMoon } from "react-icons/io5";
+import "../componentStyles/DarkModeButton/DarkModeButton.css";
 import { useSelector, useDispatch } from "react-redux";
 
 import { selectTheme, themeLight, themeDark } from "../../features/themeSlice";
@@ -11,17 +11,20 @@ const DarkModeButton = () => {
   const handleThemeChange = () => {
     if (currentTheme) {
       dispatch(themeDark());
-      console.log(currentTheme);
+      // console.log(currentTheme);
     } else {
       dispatch(themeLight());
-      console.log(currentTheme);
+      // console.log(currentTheme);
     }
   };
 
   return (
-    <div className="darkModeButton">
-      <button onClick={handleThemeChange}>{currentTheme ? "Off" : "On"}</button>
-    </div>
+    <label class="switch">
+      <input type="checkbox" />
+      <span class="slider round" onClick={handleThemeChange}>
+        {currentTheme ? <IoMoon /> : <IoSunny />}
+      </span>
+    </label>
   );
 };
 

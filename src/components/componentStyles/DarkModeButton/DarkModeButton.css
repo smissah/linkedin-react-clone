@@ -115,27 +115,49 @@ body {
   background: #0277b7;
 }
 
-.inputOption {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 1rem;
-  font-size: 1.4rem;
-  padding: 0.5rem 1rem;
-  transition: all 0.25s ease-in-out;
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 1.5rem;
+  background: rgba(138, 138, 138, 0.439);
+  border-radius: 25px;
 }
 
-.inputOption:hover {
-  background: #ebebeb;
-  border-radius: 10px;
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-.inputOption:hover h4 {
-  color: black;
+.slider {
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  display: grid;
+  place-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0277b7;
+  transition: 0.4s;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
-.inputOption h4 {
+input:checked + .slider {
+  background-color: #eef3f8;
   color: #5c5c5c;
-  margin-left: 0.5rem;
+  transform: translateX(1.5rem);
 }
-/*# sourceMappingURL=inputOption.css.map */
+
+input:focus + .slider {
+  box-shadow: 0 0 0 4px rgba(38, 149, 209, 0.7);
+  outline: none;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+/*# sourceMappingURL=DarkModeButton.css.map */
