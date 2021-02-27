@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { ThemeProvider } from "styled-components";
 import "./App.css";
 import { selectUser, login, logout } from "./features/userSlice";
 import { selectTheme } from "./features/themeSlice";
@@ -10,7 +9,8 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import Widget from "./components/Widget/Widget";
 import Login from "./components/Login/Login";
 import { auth } from "./firebase";
-
+import styled, { ThemeProvider } from "styled-components";
+import * as theme from "./darkModeConfig/theme";
 //! custom hooks
 
 //components
@@ -49,7 +49,7 @@ function App() {
 
   //----------------------
   return (
-    <ThemeProvider theme={{ currentTheme }}>
+    <ThemeProvider theme={{ theme }}>
       <div className="app">
         {user && <Header />}
         <div className="app__body container">
