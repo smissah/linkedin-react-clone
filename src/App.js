@@ -9,8 +9,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import Widget from "./components/Widget/Widget";
 import Login from "./components/Login/Login";
 import { auth } from "./firebase";
-import styled, { ThemeProvider } from "styled-components";
-import * as theme from "./darkModeConfig/theme";
+
 //! custom hooks
 
 //components
@@ -49,22 +48,20 @@ function App() {
 
   //----------------------
   return (
-    <ThemeProvider theme={{ theme }}>
-      <div className="app">
-        {user && <Header />}
-        <div className="app__body container">
-          {!user ? (
-            <Login />
-          ) : (
-            <>
-              <Sidebar />
-              <Feed />
-              <Widget />
-            </>
-          )}
-        </div>
+    <div className="app">
+      {user && <Header />}
+      <div className="app__body container">
+        {!user ? (
+          <Login />
+        ) : (
+          <>
+            <Sidebar />
+            <Feed />
+            <Widget />
+          </>
+        )}
       </div>
-    </ThemeProvider>
+    </div>
   );
 }
 
